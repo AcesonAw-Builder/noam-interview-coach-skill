@@ -904,3 +904,123 @@ You haven't researched yet, so do these tonight:
 ```
 
 **Why this example matters**: Demonstrates the Quick Script depth — what a candidate needs when the recruiter screen is tomorrow and they haven't prepared. Shows the deflection-first strategy with a fallback range, the critical "don't disclose current comp" coaching, and the research homework assignment. The coach doesn't fabricate salary data — it guides the candidate to research sources and helps construct a defensible range. Also handles the remote/location comp complexity that trips up many candidates.
+
+---
+
+## Example 19: Stories Add — Guided Discovery to STAR
+
+**Context**: Mid-career PM with 5 years of experience. Resume Analysis has been run and story seeds are populated in coaching_state.md. Candidate selects "Add" from the Storybank Menu. Currently has 2 stories (S001, S002).
+
+### Starting from story seeds
+
+```markdown
+Your resume mentions this bullet:
+
+> "Led cross-functional team to redesign checkout flow, reducing cart abandonment by 22%"
+
+There's a strong story in there — let's surface it properly. The bullet tells me *what* happened. What I don't know yet is *what made it hard* and *what only you learned from it*.
+
+Let me ask you one question at a time.
+
+**First**: What was actually difficult about getting cross-functional teams aligned on this project? What was working against you?
+```
+
+**[Candidate responds]**: "Yeah, the engineering team was skeptical of the whole redesign — they'd already rebuilt checkout six months prior and felt like we were undoing their work. And the design team wanted to make a much bigger change than the data supported."
+
+```markdown
+That's a strong story setup. You had two different resistance patterns running at the same time — one technical (engineering felt dismissed), one creative (design wanted more scope). That tension is the interesting part.
+
+Let me ask: which of those two was harder to navigate, and why?
+```
+
+**[Candidate responds]**: "Engineering for sure. The design team came around once I showed them the user research data. But with engineering, it felt personal — they had ownership of the previous version and the redesign implied the last version was wrong."
+
+```markdown
+That's a really specific insight. Let's capture this story properly. Walk me through it in STAR format — I'll ask follow-ups if something needs sharpening.
+
+**Situation**: What was the context? (Timeline, what product, what the stakes were)
+```
+
+**[Candidate provides STAR, coach pulls key details and structures the story]**
+
+```markdown
+## Story Added: "Checkout Redesign — Winning Over the Team That Owned the Last Version"
+
+- **ID**: S003
+- **Primary Skill**: Influence without authority
+- **Secondary Skill**: Data-driven decision making
+- **Situation**: 5-person PM team at Series B e-commerce startup. Checkout flow had been rebuilt 6 months prior by engineering. Cart abandonment remained at 31% — a critical metric for the business. New user research revealed the rebuilt flow hadn't addressed the core friction points. Tasked with leading another redesign despite the team fatigue.
+- **Task**: Align engineering, design, and leadership on a second redesign within a 90-day window before peak shopping season.
+- **Action**: Recognized engineering's resistance wasn't about the data — it was about ownership and respect. Invited the engineering lead to co-present the user research findings rather than presenting them to the team. Framed the redesign as "completing what the last version started" rather than "fixing what went wrong." With design, used the user research to set a scope boundary: "We redesign what the data says users struggle with, not everything we want to improve." This narrowed scope actually improved the timeline.
+- **Result**: Redesign shipped 2 weeks before peak season. Cart abandonment dropped 22% (31% → 24%). Engineering team nominated the project for an internal engineering award — unusual for a PM-led initiative.
+- **Earned Secret**: When you're asking people to redo something they already built, the fastest path is making them the co-author of why it needs to change — not the audience for your explanation of why they were wrong. The ownership shift happens before the work starts.
+- **Deploy for**: Influence without authority questions, cross-functional alignment questions, "tell me about a time you had resistance" questions
+- **Strength**: 4
+
+## Story Red Team (Level 5 only)
+- **Assumption**: That the interviewer will see co-presenting the research as the key move. If they're pattern-matching to "led cross-functional teams," they may skim past the specific technique.
+- **Blind spot**: The story is told from your POV — the engineering lead's perspective is missing. An interviewer may ask: "What did the engineering lead think about this approach afterward?" Have the quote or signal ready.
+- **Failure mode**: The 22% number gets lost if you lead with the alignment story. Front-load the outcome: "We cut cart abandonment by 22% in 90 days — but the real challenge was getting the team that had just rebuilt checkout to want to rebuild it again."
+- **Attack surface**: "How do you know the redesign caused the 22% drop? What else changed?" Be ready with: "We isolated the checkout changes with an A/B test across 40% of traffic for 3 weeks before full rollout."
+- **Fix**: Add the A/B test detail to the Result section. It makes the 22% credible, not just directional.
+
+**Recommended next**: `stories improve S003` — add the A/B test detail to harden the result claim. **Alternatives**: `stories find gaps`, `practice retrieval`, `concerns`
+```
+
+**Why this example matters**: Shows the guided discovery protocol in action — starting from story seeds instead of reflective prompts, using one-question-at-a-time sequencing to surface the real tension in the story, and then building to STAR. Demonstrates how a resume bullet becomes a specific, differentiated story. The earned secret ("making them the co-author") is the kind of counterintuitive insight that makes a Differentiation score of 4-5 possible. Also shows the Level 5 Red Team in action — each lens produces something the candidate can actually act on.
+
+---
+
+## Example 20: Stories Narrative Identity — Theme Extraction
+
+**Context**: Senior engineering candidate with 9 stories in their storybank (S001–S009). Candidate runs `stories narrative identity`. Stories span 4 companies over 8 years — a mix of IC and tech lead roles.
+
+```markdown
+## Your Narrative Identity
+
+I read through all 9 of your stories, including the full STAR text and earned secrets. Here's what I see across them.
+
+---
+
+### Core Themes
+
+1. **"Making invisible problems visible before they become crises"** — The throughline across your highest-strength stories is a pattern of seeing systemic risk before others do and acting before it became an emergency. Stories: S002 (database migration warning), S005 (reliability debt surfacing), S008 (performance degradation signal). What distinguishes your version of this theme from a generic "proactive" narrative is the specificity of the signal you caught — in each case, you identified something that looked fine on the surface but had a failure mode that wasn't obvious until you went deeper.
+
+2. **"Building for the engineer who comes after you"** — 5 of your 9 stories involve some form of documentation, knowledge transfer, or system design that made future work easier. This isn't just technical hygiene — it shows up in how you make decisions. You consistently ask "what does this look like in 18 months?" before writing the first line of code. Stories: S001, S003, S006, S007, S009.
+
+---
+
+### Your Sharpest Edge
+
+**Theme 1** is your sharpest edge. It's the most distinctive, hardest to replicate, and most likely to make an interviewer remember you.
+
+Why: Theme 2 (building for future engineers) is admirable but not rare — most senior engineers say they care about this. Theme 1 is specific to how you *process information*. You don't just "proactively communicate" — you have a specific pattern-recognition skill for systemic risk. That's an earned perspective from working close to the metal at three different infrastructure stacks. It's not something a candidate can fake with a generic story.
+
+Right now, only 3 of your 9 stories directly leverage this edge. The other 6 could be reframed to connect — they don't need new stories, just a sharper lens on the Risk/Stakes angle.
+
+---
+
+### Theme Coverage
+- Stories reinforcing a theme: 8 of 9
+- Orphan stories (no clear theme connection): **S004** — "Led migration from monolith to microservices." This story doesn't connect to either theme because you've written it as a process story (we planned, we executed, it worked). The underlying risk detection and future-proofing elements are almost certainly there — they're just not in the STAR text. Recommend: reframe or improve before your next interview.
+- Fragile themes (only 1 story): None — both themes have at least 2 stories. Theme 1 has 3.
+
+---
+
+### How To Use This
+
+**In answers**: When a question is about "handling risk" or "proactive communication," don't just tell the story — name the pattern. "I tend to look for things that seem stable but have a hidden failure mode. The most recent example..." leads better than jumping straight to the situation. It signals self-awareness about how you work, not just what you did.
+
+**In questions you ask**: "What are the systemic risks in the current architecture that aren't actively being tracked?" This question reinforces Theme 1 and signals to your interviewer that you're already thinking in their frame. It's also a genuinely useful question that will tell you something about the team.
+
+**In positioning**: Your "why this role" narrative should anchor to scale. Theme 1 (invisible-problems-made-visible) becomes more powerful as systems get more complex. "I've noticed I do my best work on systems where the failure modes aren't obvious — and I'm drawn to [Company] because the scale means those problems are real and consequential." That's a "why this company specifically" answer that doesn't sound like it was generated from their website.
+
+---
+
+### State Update
+- Profile → Transition narrative status: updated to "solid" (2 clear themes identified, sharpest edge named, S004 flagged for improvement)
+
+**Recommended next**: `stories improve S004` — reframe the microservices migration story to surface the risk-detection and future-proofing elements. **Alternatives**: `stories add` (add a third story to reinforce Theme 1), `practice`, `prep [company]`
+```
+
+**Why this example matters**: Shows the difference between surface-skill clustering ("you have 4 leadership stories") and actual theme extraction. The two themes here are specific enough to be distinctive — "making invisible problems visible" is not the same as "proactive" and the coaching makes that distinction explicit. The sharpest edge explanation models how to rank themes when one is clearly more distinctive than the other. The "how to use this" section is concrete — it gives the candidate specific language, not abstract advice. The orphan story (S004) shows the diagnostic value of narrative identity: a story isn't bad because it doesn't fit a theme — it might just need to be reframed to reveal the connection.

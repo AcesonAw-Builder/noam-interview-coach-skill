@@ -17,7 +17,11 @@ Storybank Menu
 
 ### Adding Stories — Guided Discovery
 
-When the candidate selects "Add," don't jump straight to STAR format. Most people can't produce stories on command. Use the guided exploration prompts from `references/storybank-guide.md` (peak experiences, challenge/growth, impact/influence, failure/learning) to surface stories first, *then* structure them:
+When the candidate selects "Add," don't jump straight to STAR format. Most people can't produce stories on command.
+
+**Start with story seeds (if Resume Analysis exists)**. Check `coaching_state.md` → Resume Analysis → Story seeds. If the field is populated, lead with those: "Your resume mentions [bullet X]. There's likely a richer story behind that — let's surface it." Story seeds are the fastest path to strong stories because the candidate already lived them; they just haven't structured them. If no story seeds exist (Resume Analysis hasn't been run or the field is empty), proceed to reflective prompts.
+
+**If no story seeds or seeds are exhausted**, use the guided exploration prompts from `references/storybank-guide.md` (peak experiences, challenge/growth, impact/influence, failure/learning) to surface stories:
 
 1. Ask one reflective prompt at a time. Wait for the response.
 2. Listen for the story embedded in their answer — they may not realize they're telling one.
@@ -140,7 +144,62 @@ Requires 5+ stories in the storybank. If fewer exist, redirect: "Narrative ident
 **Recommended next**: `stories improve S###` — strengthen your sharpest-edge stories. **Alternatives**: `stories add`, `practice`, `prep [company]`
 ```
 
+**State update after `stories narrative identity`**: Update `coaching_state.md` → Profile → Transition narrative status:
+- If 2+ themes are identified and the sharpest edge is clearly defined → set to "solid"
+- If themes are identified but fragile (1-story themes, orphan stories present) → set to "in progress"
+- If fewer than 5 stories exist and narrative identity couldn't run → leave unchanged
+
 ### Output Schema (per action)
+
+**After `stories view`:**
+```markdown
+## Your Storybank ([N] stories)
+
+| ID | Title | Primary Skill | Secondary Skill | Earned Secret | Strength | Use Count | Last Used |
+|----|-------|---------------|-----------------|---------------|----------|-----------|-----------|
+[table rows from coaching_state.md]
+
+### Storybank Health
+- Total stories: [N] ([X] at strength 4+, [Y] at 3, [Z] below 3)
+- Earned secret coverage: [X of N] stories have extracted earned secrets ([%])
+- Overuse flags: [S### used [N] times — consider rotating] or "None"
+- Freshness flags: [S### used at [Company] in prior rounds] or "None"
+
+**Recommended next**: `stories improve S###` — [specific story that would most benefit from improvement]. **Alternatives**: `stories add`, `stories find gaps`
+```
+
+**After `stories drill`:**
+```markdown
+## Rapid-Retrieval Drill — Round [N]
+
+[10 Q&A pairs showing: Question → S### — [opening line candidate gave]]
+
+### Debrief
+- **Retrieval speed**: [overall assessment — instant / hesitant / stuck]
+- **Best retrievals**: [questions where the candidate snapped to the right story]
+- **Hesitation moments**: [Q# — [reason: no story, wrong story, slow recall]]
+- **Mismatches**: [Q# → [story chosen] — better fit would be [S###] because [reason]]
+- **Gap signals**: [questions where no story fit — these go on the gap list]
+
+### Round Score
+- Instant retrievals (<3s): [X/10]
+- Match quality (strong fit): [X/10]
+- Strong opening lines: [X/10]
+
+**Recommended next**: `stories improve S###` — strengthen the stories that caused hesitation. **Alternatives**: `stories add`, `practice retrieval`
+```
+
+**After `stories retire/archive`:**
+```markdown
+## Story Archived: [Title] (S###)
+- Archived reason: [strength too low / overused / outdated / redundant / didn't land]
+- Archive date: [date]
+- Competency coverage impact: [any gap created by removing this story]
+
+[If gap created]: **Coverage note**: Archiving S### leaves [competency] uncovered. Consider adding a replacement story with `stories add`.
+
+**Recommended next**: `stories add` — fill the gap left by the archived story. **Alternatives**: `stories view`, `stories find gaps`
+```
 
 **After `stories add`:**
 ```markdown

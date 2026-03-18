@@ -123,6 +123,26 @@ Three new commands for the artifacts candidates build before they ever interview
 
 ---
 
+## v3.1: Stories Depth (shipped)
+
+**Thesis**: The `stories` command was the most-used command in Full System track but had incomplete output coverage and lacked integration with resume story seeds and narrative identity state.
+
+### Enhancements
+
+**Story seeds integration** — `stories add` now checks `coaching_state.md` → Resume Analysis → Story seeds before falling back to reflective prompts. Candidates who've run `kickoff` with a resume get a faster path to strong stories: starting from bullets they already have rather than prompts they haven't thought about.
+
+**Complete output schemas** — Three menu options (View, Drill, Retire/Archive) previously had protocol descriptions but no defined output schemas. Now all 7 menu options have schemas consistent with the rest of the command system.
+
+**Transition narrative status update** — After `stories narrative identity`, the system now updates `coaching_state.md` → Profile → Transition narrative status (solid / in progress) based on theme quality. This was referenced in the SKILL.md schema but not implemented in the command.
+
+**Worked examples** — Examples 19 and 20 added to `references/examples.md`:
+- Example 19: Stories Add — Guided discovery from resume story seeds to full STAR with earned secret extraction and Level 5 Red Team
+- Example 20: Stories Narrative Identity — Theme extraction showing the distinction between surface skills and underlying themes, sharpest edge identification, and orphan story diagnosis
+
+**Key files**: `references/commands/stories.md` (story seeds protocol, complete output schemas, transition narrative status update), `references/examples.md` (Examples 19-20)
+
+---
+
 ## v4: Interaction Model (planned)
 
 **Thesis**: Now that the coaching brain is strong and comprehensive, change *how* candidates interact with it.
