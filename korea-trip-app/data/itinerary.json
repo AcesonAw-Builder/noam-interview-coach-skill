@@ -1,0 +1,111 @@
+{
+  "itinerary": {
+    "metadata": {
+      "title": "J E J U, A Private Island Companion",
+      "dates": "5-9 April 2026",
+      "duration": "5 Days - 4 Nights",
+      "group_size": "For Two",
+      "accommodation": "The Grand Sumorum",
+      "flight_arrival": "9:30 AM",
+      "flight_departure": "1:25 PM April 9",
+      "transportation": "Self-drive rental car",
+      "weather_notes": "April: cherry blossoms, 14-19 deg C, occasional spring showers"
+    },
+    "drive_times_from_hotel": {
+      "address": "118 Maksukpo-ro, Beophwan-dong, Seogwipo-si",
+      "jungmun_sukseongdo": "~15 min",
+      "seogwipo_city": "~10 min",
+      "osulloc_camellia_hill": "~25-30 min",
+      "udo_island_ferry": "~55 min",
+      "aewol_coast": "~55-60 min",
+      "jeju_airport": "~45-50 min via expressway"
+    },
+    "daily_schedule": [
+      {
+        "day": "DAY ONE - 5 April 2026",
+        "date": "2026-04-05",
+        "theme": "Chill Arrival - Brunch, Coffee, Check In, Breathe",
+        "base_zone": "Aewol -> South Coast -> The Grand Sumorum",
+        "drive_route": "Airport -> Noraba (Aewol) (25 min) - Noraba -> Slow Boat (10 min) - Slow Boat -> Hotel (The Grand Sumorum) (50 min)",
+        "estimated_budget": "approx ₩120,000-150,000",
+        "stops": [
+          { "name": "Jeju International Airport", "type": "transport", "note": "Pick up rental car. Have IDP + home licence ready." },
+          { "name": "Noraba", "type": "cafe", "location": "Aewol", "note": "Brunch spot. ~25 min from airport." },
+          { "name": "Slow Boat", "type": "cafe", "location": "Aewol coast", "note": "Coffee with ocean view. ~10 min from Noraba." },
+          { "name": "The Grand Sumorum", "type": "hotel", "address": "118 Maksukpo-ro, Beophwan-dong, Seogwipo-si", "phone": "+82-64-800-7200", "note": "Check in. ~50 min from Slow Boat." }
+        ]
+      },
+      {
+        "day": "DAY TWO - 6 April 2026",
+        "date": "2026-04-06",
+        "theme": "The Big Adventure Day",
+        "base_zone": "East Coast - Udo Island + Seongsan",
+        "drive_route": "Hotel -> Seongsan Port (50 min) - Seongsan Port -> Memil Makguksu (Andeok) (55 min) - Memil Makguksu -> Hotel (25 min)",
+        "estimated_budget": "approx ₩190,000-220,000",
+        "stops": [
+          { "name": "Seongsan Port", "type": "transport", "note": "Ferry to Udo Island. Phone: +82-64-782-5671. Book ferry in advance." },
+          { "name": "Udo Island", "type": "attraction", "note": "Scenic island. Rent scooters or bicycles on the island. ~15 min ferry ride." },
+          { "name": "Seongsan Ilchulbong", "type": "attraction", "note": "UNESCO sunrise peak. Arrive before 9am to beat crowds. ₩5,000 entry." },
+          { "name": "Memil Makguksu", "type": "restaurant", "location": "Andeok", "note": "Famous buckwheat noodle restaurant. ~55 min from Seongsan." }
+        ]
+      },
+      {
+        "day": "DAY THREE - 7 April 2026",
+        "date": "2026-04-07",
+        "theme": "Market Morning + Scenic Country Day",
+        "base_zone": "Oiljang Market -> West Loop - O'sulloc, Camellia & Fine Dining",
+        "drive_route": "Hotel -> Jeju City Folk Market (45 min) - Jeju City Market -> Jejudang (Aewol) (15 min) - Jejudang -> O'sulloc (30 min) - O'sulloc -> Camellia Hill (5 min) - Camellia Hill -> Jungmun Beach (15 min) - Jungmun -> Sukseongdo + Hotel (15 min)",
+        "estimated_budget": "approx ₩240,000-270,000",
+        "stops": [
+          { "name": "Jeju City Folk Market (Oiljang)", "type": "market", "note": "Traditional 5-day market. Opens early. Local snacks + produce." },
+          { "name": "Jejudang", "type": "cafe", "location": "Aewol", "note": "Trendy cafe. ~15 min from market." },
+          { "name": "O'sulloc Tea Museum", "type": "attraction", "note": "Famous green tea estate + museum. Free entry to museum. ~30 min from Jejudang." },
+          { "name": "Camellia Hill", "type": "attraction", "note": "2,000+ camellia trees in bloom. ₩9,000 entry. ~5 min from O'sulloc." },
+          { "name": "Jungmun Beach", "type": "attraction", "note": "Scenic beach. ~15 min from Camellia Hill." },
+          { "name": "Sukseongdo Restaurant", "type": "restaurant", "location": "Jungmun", "note": "Fine dining near hotel. ~15 min from Jungmun." }
+        ]
+      },
+      {
+        "day": "DAY FOUR - 8 April 2026",
+        "date": "2026-04-08",
+        "theme": "The Local Slow Day",
+        "base_zone": "Seogwipo South - Waterfalls, Market & Haenyeo Table",
+        "drive_route": "Hotel -> Cheonjiyeon Falls (15 min) - Cheonjiyeon -> Maeil Olle Market (5 min) - Market -> Gossine Noodles (5 min) - After lunch -> Seogwipo coastal walk (5 min) - Coastal walk -> Haemultang dinner (10 min)",
+        "estimated_budget": "approx ₩130,000-150,000",
+        "stops": [
+          { "name": "Cheonjiyeon Falls", "type": "attraction", "note": "Three-tiered waterfall. 15 min walk from car park. ₩2,500 entry." },
+          { "name": "Maeil Olle Market", "type": "market", "note": "Daily local market in Seogwipo city. ~5 min from falls." },
+          { "name": "Gossine", "type": "restaurant", "note": "Famous noodle spot. ~5 min from market." },
+          { "name": "Seogwipo Coastal Walk", "type": "attraction", "note": "Scenic clifftop walk with ocean views. ~5 min from lunch." },
+          { "name": "Haemultang Restaurant", "type": "restaurant", "note": "Haenyeo-style seafood hotpot dinner. ~10 min from walk." }
+        ]
+      },
+      {
+        "day": "DAY FIVE - 9 April 2026",
+        "date": "2026-04-09",
+        "theme": "Last Morning - Flight 1:25 PM",
+        "base_zone": "Jeongbang Falls -> Jeju City -> Object Jeju -> Airport",
+        "drive_route": "Hotel -> Jeongbang Waterfall (10 min) - Jeongbang -> Tapdong Promenade (Jeju City) (45 min) - Tapdong -> Object Jeju (35 min) - Object Jeju -> Airport (car return) (30 min)",
+        "note": "Flight at 1:25 PM. Be at airport by 11:30 AM. Return car before check-in.",
+        "stops": [
+          { "name": "Jeongbang Waterfall", "type": "attraction", "note": "Waterfall that falls directly into the ocean. One of a kind. ₩2,000 entry. 10 min from hotel." },
+          { "name": "Tapdong Promenade", "type": "attraction", "location": "Jeju City", "note": "Seaside promenade + windmill. ~45 min from Jeongbang." },
+          { "name": "Object Jeju", "type": "shopping", "note": "Curated Jeju souvenir shop. ~35 min from Tapdong." },
+          { "name": "Jeju International Airport", "type": "transport", "note": "Return rental car. Depart 1:25 PM. ~30 min from Object Jeju." }
+        ]
+      }
+    ],
+    "seoul_placeholder": {
+      "dates": "April 9-11, 2026",
+      "note": "Seoul itinerary coming soon. For metro directions or recommendations, just ask!"
+    },
+    "emergency_and_key_contacts": {
+      "the_grand_sumorum": "+82-64-800-7200",
+      "jeju_tourism_info": "1330 (multilingual, 24/7)",
+      "police": "112",
+      "medical_emergency": "119",
+      "seongsan_port_udo_ferry": "+82-64-782-5671",
+      "navigation": "Naver Map: essential for all navigation. Set language to English in settings."
+    }
+  }
+}

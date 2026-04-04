@@ -1,0 +1,61 @@
+{
+  "packing_list": {
+    "trip_context": "Jeju Island (Apr 5-9) + Seoul (Apr 9-11). April weather: 14-19°C Jeju, 8-18°C Seoul. Spring showers likely. Yellow dust season.",
+    "categories": [
+      {
+        "name": "Clothing",
+        "note": "7 days, carry-on friendly",
+        "items": [
+          { "item": "T-shirts / light tops", "qty": "5x" },
+          { "item": "Long-sleeve shirts", "qty": "2x" },
+          { "item": "Jeans / trousers", "qty": "2x" },
+          { "item": "Light fleece or sweater", "qty": "1x" },
+          { "item": "Packable waterproof jacket", "qty": "1x", "critical": true, "note": "Essential — Jeju April showers are common" },
+          { "item": "Socks", "qty": "4x" },
+          { "item": "Underwear", "qty": "4x" },
+          { "item": "Comfortable walking shoes (waterproof preferred)", "qty": "1x pair", "critical": true },
+          { "item": "Casual shoes / sandals", "qty": "1x pair" },
+          { "item": "Hat", "qty": "1x" },
+          { "item": "Compact umbrella", "qty": "1x" }
+        ]
+      },
+      {
+        "name": "Documents & Money",
+        "items": [
+          { "item": "Passport", "qty": "1x", "critical": true },
+          { "item": "International Driving Permit (IDP)", "qty": "1x", "critical": true, "note": "Required for Jeju car rental" },
+          { "item": "Home driving licence", "qty": "1x", "critical": true, "note": "Must carry with IDP — neither works alone" },
+          { "item": "Credit card", "qty": "1x", "critical": true, "note": "Required for car rental deposit — debit cards not accepted" },
+          { "item": "Cash won (₩100,000-200,000)", "qty": "1x", "note": "For markets and small vendors" }
+        ]
+      },
+      {
+        "name": "Korea Essentials",
+        "items": [
+          { "item": "T-Money card", "qty": "1x", "critical": true, "note": "Buy at Incheon/Gimpo Airport — works on metro, buses, taxis, convenience stores" },
+          { "item": "Naver Maps app", "qty": "app", "note": "Essential navigation. Set to English in settings." },
+          { "item": "Kakao T app", "qty": "app", "note": "For taxis in Seoul" },
+          { "item": "Papago app", "qty": "app", "note": "Translation — Korean ↔ English" }
+        ]
+      },
+      {
+        "name": "Electronics",
+        "items": [
+          { "item": "Phone + charger", "qty": "1x" },
+          { "item": "Korea plug adapter (Type C or F, 220V)", "qty": "1x", "critical": true },
+          { "item": "Portable power bank 10,000mAh+", "qty": "1x", "note": "Full days of navigation drain battery fast" }
+        ]
+      },
+      {
+        "name": "Health & Comfort",
+        "items": [
+          { "item": "KF94 masks", "qty": "5-10x", "critical": true, "note": "Yellow dust season in April — wear on hazy days" },
+          { "item": "Sunscreen SPF 50+", "qty": "1x" },
+          { "item": "Antacids / digestive tablets", "qty": "small pack" },
+          { "item": "Painkillers (ibuprofen/paracetamol)", "qty": "small pack" },
+          { "item": "Blister plasters", "qty": "small pack", "note": "Lots of walking on cobblestones" }
+        ]
+      }
+    ]
+  }
+}

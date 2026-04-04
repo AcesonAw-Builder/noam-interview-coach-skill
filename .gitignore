@@ -6,3 +6,6 @@ coaching_state.md
 
 # Active skill file (created by copying SKILL.md during setup)
 CLAUDE.md
+korea-trip-app/node_modules/
+korea-trip-app/.next/
+korea-trip-app/.env.local
