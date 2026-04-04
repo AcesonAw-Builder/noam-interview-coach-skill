@@ -1,15 +1,17 @@
 export function buildPapagoLinks(text: string): { deepLink: string; webUrl: string } {
   const encoded = encodeURIComponent(text);
+  const webUrl = `https://papago.naver.com/?sk=en&tk=ko&st=${encoded}`;
   return {
-    deepLink: `papago://translate?message=${encoded}&sourceLanguage=en&targetLanguage=ko`,
-    webUrl: `https://papago.naver.com/?sk=en&tk=ko&st=${encoded}`,
+    deepLink: webUrl, // Use web URL — papago:// crashes Safari if app not installed
+    webUrl,
   };
 }
 
 export function buildNaverMapsDirections(from: string, to: string): string {
   const encodedFrom = encodeURIComponent(from);
   const encodedTo = encodeURIComponent(to);
-  return `https://map.naver.com/v5/directions/-/-/${encodedFrom}/${encodedTo}/car`;
+  // nmap:// deep link — opens Naver Maps app directly (requires app installed)
+  return `nmap://route/car?sname=${encodedFrom}&dname=${encodedTo}&appname=kr.co.naver.map`;
 }
 
 export function buildKakaoMapsTransit(from: string, to: string): string {

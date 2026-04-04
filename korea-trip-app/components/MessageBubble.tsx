@@ -16,12 +16,12 @@ function DirectionsCard({ result }: { result: Extract<ToolResult, { type: "direc
       </p>
       <div className="flex flex-wrap gap-2">
         <a
-          href={result.naverUrl}
+          href={result.googleUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-green-600 px-3 py-1.5 text-xs font-semibold text-white"
+          className="rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white"
         >
-          Open in Naver Maps
+          Google Maps
         </a>
         {result.kakaoUrl && (
           <a
@@ -30,16 +30,14 @@ function DirectionsCard({ result }: { result: Extract<ToolResult, { type: "direc
             rel="noopener noreferrer"
             className="rounded-lg bg-yellow-400 px-3 py-1.5 text-xs font-semibold text-black"
           >
-            Open in Kakao Maps
+            Kakao Maps
           </a>
         )}
         <a
-          href={result.googleUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 ring-1 ring-gray-300"
+          href={result.naverUrl}
+          className="rounded-lg bg-green-600 px-3 py-1.5 text-xs font-semibold text-white"
         >
-          Google Maps
+          Naver Maps App
         </a>
       </div>
     </div>
@@ -52,18 +50,12 @@ function TranslationCard({ result }: { result: Extract<ToolResult, { type: "tran
       <p className="mb-1 text-xs text-purple-600 dark:text-purple-400">Translate: &ldquo;{result.text}&rdquo;</p>
       <div className="flex flex-wrap gap-2">
         <a
-          href={result.deepLink}
-          className="rounded-lg bg-[#03C75A] px-3 py-1.5 text-xs font-semibold text-white"
-        >
-          Open in Papago
-        </a>
-        <a
           href={result.webUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-lg bg-white px-3 py-1.5 text-xs font-semibold text-gray-700 ring-1 ring-gray-300"
+          className="rounded-lg bg-[#03C75A] px-3 py-1.5 text-xs font-semibold text-white"
         >
-          Papago Web
+          Open Papago
         </a>
       </div>
     </div>

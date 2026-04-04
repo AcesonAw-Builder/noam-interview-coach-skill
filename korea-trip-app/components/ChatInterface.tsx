@@ -46,7 +46,14 @@ export default function ChatInterface() {
         }),
       });
 
-      if (!res.ok || !res.body) throw new Error("API error");
+      if (!res.ok || !res.body) {
+        let errorDetail = `HTTP ${res.status}`;
+        try {
+          const body = await res.json();
+          errorDetail = body.error ?? errorDetail;
+        } catch {}
+        throw new Error(errorDetail);
+      }
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -96,11 +103,12 @@ export default function ChatInterface() {
         }
       }
     } catch (err) {
+      const errMsg = err instanceof Error ? err.message : "Unknown error";
       setMessages((prev) => {
         const updated = [...prev];
         updated[updated.length - 1] = {
           role: "assistant",
-          content: "Sorry, something went wrong. Please try again.",
+          content: `Error: ${errMsg}`,
         };
         return updated;
       });
