@@ -115,6 +115,15 @@ Map extracted competencies against candidate profile. For each competency:
 
 Produce fit verdict using the Role-Fit Assessment from cross-cutting.md (5 dimensions: Requirement Coverage, Seniority Alignment, Domain Relevance, Competency Overlap, Trajectory Coherence). Classify gaps as Frameable (narrative can bridge) or Structural (real limitation).
 
+Then classify every gap a second way — by **where it sits in the JD**, using the Screening/Differentiating split from Lens 3:
+
+| Placement | Where it appears | What it costs |
+|---|---|---|
+| **Screening-blocking** | Requirements / "must have" | Filters the candidate out before a human reads the resume. Hard numbers ("at least 5 years") and named skills stated as requirements are the expensive ones. |
+| **Differentiating** | Nice-to-haves / "a strong plus" / "an advantage" | Separates Hire from Strong Hire. Costs nothing at the screen. |
+
+A gap's placement and its Frameable/Structural type are independent. A Frameable gap sitting in Requirements still blocks at the screen, because the screen happens before anyone hears the framing. This distinction is what Step 7 ranks on.
+
 Verdict: Strong Fit / Investable Stretch / Long-Shot Stretch / Weak Fit
 
 For Long-Shot Stretch and Weak Fit: be honest. "This JD targets [X], and your profile shows [Y]. You could apply, but you should know the gap is structural, not just a framing issue." Don't waste the candidate's time encouraging applications to roles they're not competitive for — unless they have a specific strategy (referral, internal transfer, etc.).
@@ -132,6 +141,8 @@ For each JD: run Steps 1-6 individually (can be abbreviated for Quick Scan depth
 
 Then produce comparative analysis:
 - **Rank by fit** (highest fit first, with evidence for each)
+- **Break ties on gap placement, not gap count.** Two roles routinely land on the same verdict — this is the normal case in a small batch, not the exception, and "both are Investable Stretch" is not a ranking. When verdicts tie, rank the role whose gaps sit in nice-to-haves above the role whose gaps sit in Requirements. Reasoning: a Requirements gap is priced at the screen, before any positioning, referral, or cover letter can speak to it; a nice-to-have gap is priced in the interview, where the candidate is present to bridge it. Count matters only within the same placement — two screening-blocking gaps beat one.
+- **Weigh gaps against the JD's own stated priority.** When a JD ranks what it wants ("in priority order", "first and foremost", "this is the primary bar"), score the candidate's evidence against the #1 item before anything else. Strong evidence on a JD's stated primary bar outranks strong evidence on its third — and a role whose primary bar matches the candidate's best-evidenced work ranks above a role that merely shares its subject matter. Interest in the domain is not evidence of the competency being screened for.
 - **Overlapping competencies** across JDs — this reveals the candidate's market-validated sweet spot
 - **Divergent requirements** — where JDs pull in different directions, signaling scope decisions the candidate needs to make
 - **Allocation recommendation**: which to pursue first, which to skip, which to research more. Honest about skips — "This one is a Long-Shot Stretch because [specific reason]. Unless you have an inside connection, your time is better spent on the others."
@@ -278,11 +289,14 @@ Based on top competencies and identified gaps:
 ## Batch Triage: [N] Roles
 
 ## Ranking
-| Rank | Company | Role | Fit | Strongest Match | Biggest Gap | Recommendation |
-|---|---|---|---|---|---|---|
-| 1 | ... | ... | Strong | [competency] | [gap or none] | Pursue |
-| 2 | ... | ... | Investable Stretch | [competency] | [gap] | Pursue with positioning |
-| 3 | ... | ... | Long-Shot Stretch | [competency] | [gap] | Skip unless referral |
+| Rank | Company | Role | Fit | Strongest Match | Biggest Gap | Gap Sits In | Recommendation |
+|---|---|---|---|---|---|---|---|
+| 1 | ... | ... | Strong | [competency] | [gap or none] | Nice-to-have / none | Pursue |
+| 2 | ... | ... | Investable Stretch | [competency] | [gap] | Nice-to-have | Pursue with positioning |
+| 3 | ... | ... | Investable Stretch | [competency] | [gap] | Requirements (screening) | Pursue, but fix the screening gap first |
+| 4 | ... | ... | Long-Shot Stretch | [competency] | [gap] | Requirements (screening) | Skip unless referral |
+
+**When two rows share a verdict, state the tiebreaker explicitly** — one line naming which role's gaps sit in Requirements and which sit in nice-to-haves. A ranking the candidate can't audit is a ranking they won't trust.
 
 ## Your Sweet Spot
 [Competencies that appear across multiple JDs — this is what the market values in you. Ordered by frequency across JDs.]
@@ -314,6 +328,8 @@ Save to coaching_state.md (one entry per JD — multiple can exist):
 - Top competencies: [top 3 in priority order]
 - Frameable gaps: [list]
 - Structural gaps: [list]
+- Screening-blocking gaps: [gaps sitting in Requirements — the ones priced before a human reads the resume]
 - Unverified assumptions: [count of LOW/UNKNOWN confidence items]
 - Batch triage rank: [if part of batch — rank/total]
+- Rank rationale: [if tied on verdict — the one-line tiebreaker, so a later session can defend the rank without re-decoding]
 ```
